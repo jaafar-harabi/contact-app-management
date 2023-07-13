@@ -4,10 +4,7 @@ require('dotenv').config()
 const app = express()
 require('./config/connect')
 const path = require('path')
-import {fileURLToPath} from 'url'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
 const contactRouter=require('./routes/contact')
 const userRouter=require('./routes/user')
 
